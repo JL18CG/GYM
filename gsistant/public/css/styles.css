@@ -32,7 +32,7 @@
 
 .icono-m{
     margin-top: -2px;
-    margin-l: 2px;
+    margin-right: 3px;
     font-size: .9rem;
 }
 
@@ -46,4 +46,9 @@
     margin-right:  3px;
     font-size: 20px;
     font-weight: bold;
+}
+
+
+.icon-toggler{
+    color: white !important;
 }
