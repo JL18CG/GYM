@@ -1,0 +1,49 @@
+/** para corregir errores en los campos de error en el login **/
+.btn-round-right{
+    border-top-right-radius: 30px 30px !important;
+    border-bottom-right-radius: 30px 30px !important;
+
+}
+
+.btn-round-right:focus{
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+
+
+.img-profile{
+    max-height: 25px;
+    border-radius: 20px;
+}
+
+/** Dropdown menu modificar estilos, correccion acomodo **/
+.dropdown-menu::before{
+    right: 10px !important;
+}
+
+.dropdown-menu{
+    right: 0!important;
+}
+
+.icono-m, .txt-color{
+    color:#f96332 !important
+}
+
+.icono-m{
+    margin-top: -2px;
+    margin-l: 2px;
+    font-size: .9rem;
+}
+
+.logo-nav{
+    width: 100px;
+    margin-right:  20px;
+}
+
+
+.item-m{
+    margin-right:  3px;
+    font-size: 20px;
+    font-weight: bold;
+}

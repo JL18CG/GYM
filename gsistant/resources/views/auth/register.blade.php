@@ -1,77 +1,65 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
-
-                <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}">
-                        @csrf
-
-                        <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
-
-                                @error('name')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
-
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
-
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
-                            </div>
-                        </div>
-
-                        <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
+    <form class="form" method="POST" action="{{ route('register') }}">
+        @csrf
+      <div class="card-header text-center">
+        <div class="logo-container w-100 mb-4">
+          <img src="{{ asset('pagina/assets/img/now-logo.png')}}" alt="">
         </div>
     </div>
-</div>
+
+    <div class="card-body">
+      <div class="input-group no-border input-lg">
+        <div class="input-group-prepend">
+          <span class="input-group-text">
+            <i class="fas fa-envelope"></i>
+          </span>
+        </div>
+        <input type="mail" class="form-control @error('email') is-invalid btn-round-right  @enderror " name="email" value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="Tu Correo">
+            @error('email')
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror
+      </div>
+
+
+      <div class="input-group no-border input-lg">
+        <div class="input-group-prepend">
+          <span class="input-group-text">
+            <i class="fas fa-unlock-alt"></i>
+          </span>
+        </div>
+        <input type="password" class="form-control @error('password') is-invalid btn-round-right  @enderror" name="password" required autocomplete="new-password" placeholder="Tu Contraseña" />
+            @error('password')
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror
+      </div>
+
+      <div class="input-group no-border input-lg mb-0">
+        <div class="input-group-prepend">
+          <span class="input-group-text">
+            <i class="fas fa-unlock-alt"></i>
+          </span>
+        </div>
+        <input type="password" class="form-control" name="password_confirmation" required autocomplete="new-password" placeholder="Confirmar Contraseña"/>
+      </div>
+
+
+    </div>
+    <div class="card-footer text-center margin-t-p">
+      <input type="submit" class="btn btn-primary btn-round btn-lg btn-block" value="Registrarme">
+
+      <div class="pull-left">
+        <h6>
+          <a href="{{ route('login') }}" class="link">Ya Tengo Cuenta</a>
+        </h6>
+      </div>
+      <div class="pull-right">
+      </div>
+
+  </form>
 @endsection
