@@ -27,7 +27,7 @@
   <nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent " color-on-scroll="400">
     <div class="container">
       <div class="dropdown button-dropdown">
-        <a href="#!" class="dropdown-toggle" id="navbarDropdown" data-toggle="dropdown">
+        <a href="#pablo" class="dropdown-toggle" id="navbarDropdown" data-toggle="dropdown">
 
         </a>
 
@@ -45,7 +45,7 @@
       <div class="collapse navbar-collapse justify-content-end" id="navigation" data-nav-image="{{asset('pagina/assets/img/blurred-image-1.jpg')}}">
         <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#">Nuestras Redes Sociales</a>
+          <a class="nav-link" href="#">Nuestras Redes </a>
         </li>
           <li class="nav-item">
             <a class="nav-link" rel="tooltip" title="Síguenos en Twitter" data-placement="bottom" href="#" target="_blank">
