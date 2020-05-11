@@ -24,7 +24,7 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent " color-on-scroll="400">
     <div class="container">
-      <div class="dropdown button-dropdown">
+      {{-- <div class="dropdown button-dropdown">
         <a href="#pablo" class="dropdown-toggle" id="navbarDropdown" data-toggle="dropdown">
           <span class="button-bar"></span>
           <span class="button-bar"></span>
@@ -35,8 +35,8 @@
         <a class="navbar-brand" href="#">
           GSISTANT
         </a>
-      </div>
-      <div class="collapse navbar-collapse justify-content-end" id="navigation" data-nav-image="{{asset('pagina/assets/img/blurred-image-1.jpg')}}">
+      </div> --}}
+      <div class="collapse navbar-collapse justify-content-end" id="navigation" data-nav-image="{{asset('pagina/assets/img/fondo-login.jpg')}}">
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" rel="tooltip" title="Síguenos en Twitter" data-placement="bottom" href="#" target="_blank">
@@ -62,14 +62,14 @@
   </nav>
   <!-- End Navbar -->
   <div class="page-header clear-filter" filter-color="orange">
-    <div class="page-header-image" style="background-image:url({{ asset('pagina/assets/img/login.jpg')}}"></div>
+    <div class="page-header-image" style="background-image:url({{ asset('pagina/assets/img/fondo-login.jpg')}}"></div>
     <div class="content">
       <div class="container">
         <div class="col-md-4 ml-auto mr-auto">
           <div class="card card-login card-plain">
             <form class="form" method="" action="">
               <div class="card-header text-center">
-                <div class="logo-container">
+                <div class="logo-container" style="width: 100%;">
                   <img src="{{ asset('pagina/assets/img/now-logo.png')}}" alt="">
                 </div>
               </div>
@@ -80,27 +80,27 @@
                       <i class="now-ui-icons users_circle-08"></i>
                     </span>
                   </div>
-                  <input type="text" class="form-control" placeholder="First Name...">
+                  <input type="text" class="form-control" placeholder="Correo electronico">
                 </div>
                 <div class="input-group no-border input-lg">
                   <div class="input-group-prepend">
                     <span class="input-group-text">
-                      <i class="now-ui-icons text_caps-small"></i>
+                      <i class="now-ui-icons ui-1_lock-circle-open"></i>
                     </span>
                   </div>
-                  <input type="text" placeholder="Last Name..." class="form-control" />
+                  <input type="text" placeholder="Contraseña" class="form-control" />
                 </div>
               </div>
               <div class="card-footer text-center">
-                <a href="#pablo" class="btn btn-primary btn-round btn-lg btn-block">Get Started</a>
+                <a href="#pablo" class="btn btn-primary btn-round btn-lg btn-block">Iniciar Sesión</a>
                 <div class="pull-left">
                   <h6>
-                    <a href="#pablo" class="link">Create Account</a>
+                    <a href="#pablo" class="link">Crear una cuenta</a>
                   </h6>
                 </div>
                 <div class="pull-right">
                   <h6>
-                    <a href="#pablo" class="link">Need Help?</a>
+                    <a href="#pablo" class="link">¿Necesitas ayuda?</a>
                   </h6>
                 </div>
             </form>
@@ -120,7 +120,7 @@
             </li>
             <li>
               <a href="http://presentation.creative-tim.com">
-                About Us
+                Acerca De
               </a>
             </li>
             <li>
