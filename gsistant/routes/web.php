@@ -25,7 +25,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::resource('principal', 'User\UserController');
+Route::resource('dashboard', 'User\UserController');
 
 
 

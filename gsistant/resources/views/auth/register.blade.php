@@ -5,7 +5,7 @@
         @csrf
       <div class="card-header text-center">
         <div class="logo-container w-100 mb-4">
-          <img src="{{ asset('pagina/assets/img/now-logo.png')}}" alt="">
+          <img src="{{ asset('pagina/assets/img/logo-naranja.png')}}" alt="">
         </div>
     </div>
 
