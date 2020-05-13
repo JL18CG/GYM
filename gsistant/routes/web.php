@@ -13,14 +13,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/*
 Route::get('/', function () {
     return view('welcome');
 });
+*/
+Route::get('/', function () {
+    return view('layouts.principal');
+});
+
 
 Auth::routes();
 
 Route::resource('principal', 'User\UserController');
-
 
 
 
