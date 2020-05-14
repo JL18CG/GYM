@@ -20,11 +20,12 @@
   <link href="{{ asset('pagina/assets/demo/demo.css')}}"  rel="stylesheet"/>
   <link href="{{ asset('css/all.css')}}"  rel="stylesheet"/>
   <link href="{{ asset('css/styles.css')}}"  rel="stylesheet"/>
+
 </head>
 
 <body class="login-page sidebar-collapse">
 
-  <nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent " color-on-scroll="400">
+  <nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent nav-border-none " color-on-scroll="400">
     <div class="container">
       <div class="dropdown button-dropdown">
         <a href="#pablo" class="dropdown-toggle" id="navbarDropdown" data-toggle="dropdown">
@@ -33,7 +34,7 @@
 
       </div>
       <div class="navbar-translate">
-        <a class="navbar-brand" href="https://demos.creative-tim.com/now-ui-kit/index.html" rel="tooltip" title="Designed by Invision. Coded by Creative Tim" data-placement="bottom" target="_blank">
+        <a class="navbar-brand" href="#!" rel="tooltip" data-placement="bottom" >
 
         </a>
         <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,22 +46,22 @@
       <div class="collapse navbar-collapse justify-content-end" id="navigation" data-nav-image="{{asset('pagina/assets/img/blurred-image-1.jpg')}}">
         <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#">Nuestras Redes </a>
+          <a class="nav-link nav-link-color" href="#">Nuestras Redes </a>
         </li>
           <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="Síguenos en Twitter" data-placement="bottom" href="#" target="_blank">
+            <a class="nav-link nav-link-color" rel="tooltip" title="Síguenos en Twitter" data-placement="bottom" href="#" target="_blank">
               <i class="fab fa-twitter"></i>
               <p class="d-lg-none d-xl-none">Twitter</p>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="Visita nuestro Facebook" data-placement="bottom" href="#" target="_blank">
+            <a class="nav-link nav-link-color" rel="tooltip" title="Visita nuestro Facebook" data-placement="bottom" href="#" target="_blank">
               <i class="fab fa-facebook-square"></i>
               <p class="d-lg-none d-xl-none">Facebook</p>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" rel="tooltip" title="Síguenos en Instagram" data-placement="bottom" href="#" target="_blank">
+          <li class="nav-item ">
+            <a class="nav-link nav-link-color" rel="tooltip" title="Síguenos en Instagram" data-placement="bottom" href="#" target="_blank">
               <i class="fab fa-instagram"></i>
               <p class="d-lg-none d-xl-none">Instagram</p>
             </a>
@@ -91,18 +92,7 @@
     <footer class="footer mb-0 mt-0 pt-0 pb-1">
       <div class=" container mb-0 mt-0 pt-0">
         <nav>
-          <ul>
-            <li>
-              <a href="#">
-                Sobre Nosotros
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                 GSISTANT
-              </a>
-            </li>
-          </ul>
+         
         </nav>
         <div class="copyright" id="copyright mb-0 mt-0" >
           &copy; 2020 Todos los Derechos Reservados.
@@ -124,6 +114,10 @@
   <!--<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>-->
   <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
   <script src="{{ asset('pagina/assets/js/now-ui-kit.js?v=1.3.0')}}" type="text/javascript"></script>
+
+
+
+
 </body>
 
 </html>

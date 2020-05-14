@@ -17,15 +17,15 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="{{ asset('principal/assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
-  <link href="{{ asset('principal/assets/vendor/icofont/icofont.min.css')}}" rel="stylesheet">
-  <link href="{{ asset('principal/assets/vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
-  <link href="{{ asset('principal/assets/vendor/animate.css/animate.min.css" rel="stylesheet')}}">
-  <link href="{{ asset('principal/assets/vendor/venobox/venobox.css" rel="stylesheet')}}">
-  <link href="{{ asset('principal/assets/vendor/owl.carousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
+  <link href="{{ asset('web/assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+  <link href="{{ asset('web/assets/vendor/icofont/icofont.min.css')}}" rel="stylesheet">
+  <link href="{{ asset('web/assets/vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
+  <link href="{{ asset('web/assets/vendor/animate.css/animate.min.css" rel="stylesheet')}}">
+  <link href="{{ asset('web/assets/vendor/venobox/venobox.css" rel="stylesheet')}}">
+  <link href="{{ asset('web/assets/vendor/owl.carousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="{{ asset('principal/assets/css/style.css')}}" rel="stylesheet">
+  <link href="{{ asset('web/assets/css/style.css')}}" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Delicious - v2.0.2
@@ -51,7 +51,7 @@
 
       <div class="logo mr-auto">
       {{--  <h1 class="text-light"><a href="index.html"><span>MAMALAND</span></a></h1>--}}
-         <img src="http://drive.google.com/uc?export=view&id=1C588Zfgug0dH43Y02g_2bxyfOY5yesYq" alt=""> 
+         <img src="http://drive.google.com/uc?export=view&id=1C588Zfgug0dH43Y02g_2bxyfOY5yesYq" alt="">
 
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
@@ -97,7 +97,7 @@
                   <a href="#aplicacion" class="btn-book animated fadeInUp scrollto">Nuestra App</a>
                 </div>
               </div>
-            </div> 
+            </div>
           </div>
 
           <!-- Slide 2 -->
@@ -155,7 +155,7 @@
         <div class="row">
 
           <div class="col-lg-5 align-items-stretch video-box" style='background-image: url("http://drive.google.com/uc?export=view&id=1MsGC9socfKMVsTrKZESg2kLbgNwIS25Z");'>
-            <a href="https://www.youtube.com/watch?v=v1WZJKLfiHo" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+            <!--<a href="https://www.youtube.com/watch?v=v1WZJKLfiHo" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>-->
           </div>
 
           <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
@@ -174,7 +174,7 @@
                 <li><i class="bx bx-check-double"></i> Sistema inteligente de monitoreo de ejercicio.</li>
               </ul>
               <p>
-                En GSISTANT nos preocupamos por tu bienestar, por lo que diseñamos un asistente virtual con 
+                En GSISTANT nos preocupamos por tu bienestar, por lo que diseñamos un asistente virtual con
                 Inteligencia Artificial el cual te ayudara a realizar tus rutinas de una forma correcta.
               </p>
             </div>
@@ -240,377 +240,44 @@
       </div>
     </section><!-- End Whu Us Section -->
 
-    <!-- ======= Menu Section ======= -->
-    {{-- <section id="menu" class="menu">
-      <div class="container">
 
-        <div class="section-title">
-          <h2>Check our tasty <span>Menu</span></h2>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="menu-flters">
-              <li data-filter="*" class="filter-active">Show All</li>
-              <li data-filter=".filter-starters">Starters</li>
-              <li data-filter=".filter-salads">Salads</li>
-              <li data-filter=".filter-specialty">Specialty</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row menu-container">
-
-          <div class="col-lg-6 menu-item filter-starters">
-            <div class="menu-content">
-              <a href="#">Lobster Bisque</a><span>$5.95</span>
-            </div>
-            <div class="menu-ingredients">
-              Lorem, deren, trataro, filede, nerada
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-specialty">
-            <div class="menu-content">
-              <a href="#">Bread barrel</a><span>$6.95</span>
-            </div>
-            <div class="menu-ingredients">
-              Lorem, deren, trataro, filede, nerada
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-starters">
-            <div class="menu-content">
-              <a href="#">Crab Cake</a><span>$7.95</span>
-            </div>
-            <div class="menu-ingredients">
-              A delicate crab cake served on a toasted roll with lettuce and tartar sauce
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-salads">
-            <div class="menu-content">
-              <a href="#">Caesar Selections</a><span>$8.95</span>
-            </div>
-            <div class="menu-ingredients">
-              Lorem, deren, trataro, filede, nerada
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-specialty">
-            <div class="menu-content">
-              <a href="#">Tuscan Grilled</a><span>$9.95</span>
-            </div>
-            <div class="menu-ingredients">
-              Grilled chicken with provolone, artichoke hearts, and roasted red pesto
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-starters">
-            <div class="menu-content">
-              <a href="#">Mozzarella Stick</a><span>$4.95</span>
-            </div>
-            <div class="menu-ingredients">
-              Lorem, deren, trataro, filede, nerada
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-salads">
-            <div class="menu-content">
-              <a href="#">Greek Salad</a><span>$9.95</span>
-            </div>
-            <div class="menu-ingredients">
-              Fresh spinach, crisp romaine, tomatoes, and Greek olives
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-salads">
-            <div class="menu-content">
-              <a href="#">Spinach Salad</a><span>$9.95</span>
-            </div>
-            <div class="menu-ingredients">
-              Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette
-            </div>
-          </div>
-
-          <div class="col-lg-6 menu-item filter-specialty">
-            <div class="menu-content">
-              <a href="#">Lobster Roll</a><span>$12.95</span>
-            </div>
-            <div class="menu-ingredients">
-              Plump lobster meat, mayo and crisp lettuce on a toasted bulky roll
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section> --}}
-    <!-- End Menu Section -->
-
-    <!-- ======= Specials Section ======= -->
-   
-
-        
-          {{-- <div class="col-mg-6 ">
-            <img src="http://drive.google.com/uc?export=view&id=1Hp_zxHynGyqQdww30VOKwL-_4_CkS-c- " style="background-size:100%;" alt="">
-            http://drive.google.com/uc?export=view&id=10An9lCdoMOnlzWZEUsIIV8EQax4eo0TX
-          </div> 
-      
-
-          <div class="col-lg-5 align-items-stretch video-box" style='background-image: url("http://drive.google.com/uc?export=view&id=1KRD8q68VZxCD3szwPz9-_Wkd20sOPl3X");'>
-            <a href="https://www.youtube.com/watch?v=v1WZJKLfiHo" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
-          </div>--}}
           <section id="aplicacion" class="about">
             <div class="container-fluid">
-      
+
               <div class="row">
-      
+
                 <div class="col-lg-5 align-items-stretch video-box" style='background-image: url("http://drive.google.com/uc?export=view&id=1Hp_zxHynGyqQdww30VOKwL-_4_CkS-c- ");'>
-                  
+
                 </div>
-      
+
                 <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
-      
+
                   <div class="content">
                     <h3>GSISTANT en tus manos</h3>
                     <p>
                       Ahora puedes acceder a nuestro contenido desde tu dispositivo inteligente cuando quieras y donde quieras.
                     </p>
-                  
+
                     <p>
                       Podras realizar todo lo que hacias desde tu computadora pero ahora en tu telefono o tablet.
                     </p>
                     <a href="https://play.google.com/store?hl=es_MX"><img class="w-50 h-50 float-left"  src="http://drive.google.com/uc?export=view&id=1PlpyLBETKz10ZEYNxAJZxgnAz4NllqgV" alt=""></a>
-                    
+
                     <a href="https://www.apple.com/mx/ios/app-store/"><img class="w-50 h-50 float-right"  src="http://drive.google.com/uc?export=view&id=1SFY54WQ0u2hnDggGkEGZlUFl7Md2LTr6" alt=""></a>
-                    
-                    
-                    
-                    
-                   
-      
+
+
+
+
+
+
                 </div>
-      
+
               </div>
-      
+
             </div>
           </section>
-         <!-- End Specials Section -->
 
-    <!-- ======= Events Section ======= -->
-    {{-- <section id="events" class="events">
-      <div class="container">
 
-        <div class="section-title">
-          <h2>Organize Your <span>Events</span> in our Restaurant</h2>
-        </div>
-
-        <div class="owl-carousel events-carousel">
-
-          <div class="row event-item">
-            <div class="col-lg-6">
-              <img src="assets/img/event-birthday.jpg" class="img-fluid" alt="">
-            </div>
-            <div class="col-lg-6 pt-4 pt-lg-0 content">
-              <h3>Birthday Parties</h3>
-              <div class="price">
-                <p><span>$189</span></p>
-              </div>
-              <p class="font-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
-              <ul>
-                <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="icofont-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              </ul>
-              <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur
-              </p>
-            </div>
-          </div>
-
-          <div class="row event-item">
-            <div class="col-lg-6">
-              <img src="assets/img/event-private.jpg" class="img-fluid" alt="">
-            </div>
-            <div class="col-lg-6 pt-4 pt-lg-0 content">
-              <h3>Private Parties</h3>
-              <div class="price">
-                <p><span>$290</span></p>
-              </div>
-              <p class="font-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
-              <ul>
-                <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="icofont-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              </ul>
-              <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur
-              </p>
-            </div>
-          </div>
-
-          <div class="row event-item">
-            <div class="col-lg-6">
-              <img src="assets/img/event-custom.jpg" class="img-fluid" alt="">
-            </div>
-            <div class="col-lg-6 pt-4 pt-lg-0 content">
-              <h3>Custom Parties</h3>
-              <div class="price">
-                <p><span>$99</span></p>
-              </div>
-              <p class="font-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
-              </p>
-              <ul>
-                <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="icofont-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="icofont-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              </ul>
-              <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur
-              </p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section> --}}
-    <!-- End Events Section -->
-
-    <!-- ======= Book A Table Section ======= -->
-    {{-- <section id="book-a-table" class="book-a-table">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Book a <span>Table</span></h2>
-          <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
-        </div>
-
-        <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form">
-          <div class="form-row">
-            <div class="col-lg-4 col-md-6 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
-            </div>
-            <div class="col-lg-4 col-md-6 form-group">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
-              <div class="validate"></div>
-            </div>
-            <div class="col-lg-4 col-md-6 form-group">
-              <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
-            </div>
-            <div class="col-lg-4 col-md-6 form-group">
-              <input type="text" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
-            </div>
-            <div class="col-lg-4 col-md-6 form-group">
-              <input type="text" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-              <div class="validate"></div>
-            </div>
-            <div class="col-lg-4 col-md-6 form-group">
-              <input type="number" class="form-control" name="people" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
-              <div class="validate"></div>
-            </div>
-          </div>
-          <div class="form-group">
-            <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
-            <div class="validate"></div>
-          </div>
-          <div class="mb-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
-          </div>
-          <div class="text-center"><button type="submit">Send Message</button></div>
-        </form>
-
-      </div>
-    </section><!-- End Book A Table Section --> --}}
-
-    <!-- ======= Gallery Section ======= -->
-    <section id="gallery" class="gallery">
-      <div class="container-fluid">
-
-        <div class="section-title">
-          <h2><span>Galeria</span></h2>
-          
-        </div>
-
-        <div class="row no-gutters">
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-                <img src="http://drive.google.com/uc?export=view&id=1SO5-snpg0SXWw2_UGHW5VbwJwXskUXDq" alt="" class="img-fluid">
-            
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-                <img src="http://drive.google.com/uc?export=view&id=10Pef3Jzyn9VuTplxvV7tPSSkOuBJjAT_" alt="" class="img-fluid">
-              
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-                <img src="http://drive.google.com/uc?export=view&id=1V6IaZEToPU1dmy6oXGYxJYI3h5cBRdLp" alt="" class="img-fluid">
-            
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-                <img src="http://drive.google.com/uc?export=view&id=1xnd6gnVOphMUzNXE188RlQ2ud-F5x0o6" alt="" class="img-fluid">
-              
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-                <img src="http://drive.google.com/uc?export=view&id=1445--YibNnPGH1BXjeRjz7wC7doY8Nnx" alt="" class="img-fluid">
-              
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-                <img src="http://drive.google.com/uc?export=view&id=1CKXXcGVS6EEwK62sfI8M47vKEdIrbEEc" alt="" class="img-fluid">
-              
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-                <img src="http://drive.google.com/uc?export=view&id=1g46ygmAjhqyzbwj1cEvDfNjXM2ZjIl7v" alt="" class="img-fluid">
-            
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-                <img src="http://drive.google.com/uc?export=view&id=16b4wGiYKyGNEghNotM03ikoHE_VB2r1G" alt="" class="img-fluid">
-              
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Gallery Section -->
 
     <!-- ======= Chefs Section ======= -->
     <section id="chefs" class="chefs">
@@ -620,9 +287,9 @@
           <h2><span>Nuestros entrenadores</span></h2>
           <p>Nuestros entrenadores estan disponibles todo el tiempo y cuentan con certificados que los avalan.</p>
         </div>
-        
+
         <div class="row">
-         
+
           <div class="col-lg-4 col-md-6">
             <div class="member">
               <div class="pic"><img src="http://drive.google.com/uc?export=view&id=16RhSTAiPWZ2zELeo5rCKou7kHpOSLmWr" class="img-fluid" alt=""></div>
@@ -638,7 +305,7 @@
               </div>
             </div>
           </div>
-          
+
           <div class="col-lg-4 col-md-6">
             <div class="member">
               <div class="pic"><img src="http://drive.google.com/uc?export=view&id=1Oi_k7f1gtf1P3ib3HaguaVHBNuNvd9CM" class="img-fluid" alt=""></div>
@@ -654,7 +321,7 @@
               </div>
             </div>
           </div>
-          
+
           <div class="col-lg-4 col-md-6">
             <div class="member">
               <div class="pic"><img src="http://drive.google.com/uc?export=view&id=1u0_5fEstHA7MdaoPJ2y36Fw8BrsZteQB" class="img-fluid" alt=""></div>
@@ -675,6 +342,78 @@
 
       </div>
     </section><!-- End Chefs Section -->
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery">
+      <div class="container-fluid">
+
+        <div class="section-title">
+          <h2><span>Galeria</span></h2>
+
+        </div>
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+                <img src="http://drive.google.com/uc?export=view&id=1SO5-snpg0SXWw2_UGHW5VbwJwXskUXDq" alt="" class="img-fluid">
+
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+                <img src="http://drive.google.com/uc?export=view&id=10Pef3Jzyn9VuTplxvV7tPSSkOuBJjAT_" alt="" class="img-fluid">
+
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+                <img src="http://drive.google.com/uc?export=view&id=1V6IaZEToPU1dmy6oXGYxJYI3h5cBRdLp" alt="" class="img-fluid">
+
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+                <img src="http://drive.google.com/uc?export=view&id=1xnd6gnVOphMUzNXE188RlQ2ud-F5x0o6" alt="" class="img-fluid">
+
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+                <img src="http://drive.google.com/uc?export=view&id=1445--YibNnPGH1BXjeRjz7wC7doY8Nnx" alt="" class="img-fluid">
+
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+                <img src="http://drive.google.com/uc?export=view&id=1CKXXcGVS6EEwK62sfI8M47vKEdIrbEEc" alt="" class="img-fluid">
+
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+                <img src="http://drive.google.com/uc?export=view&id=1g46ygmAjhqyzbwj1cEvDfNjXM2ZjIl7v" alt="" class="img-fluid">
+
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+                <img src="http://drive.google.com/uc?export=view&id=16b4wGiYKyGNEghNotM03ikoHE_VB2r1G" alt="" class="img-fluid">
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Gallery Section -->
 
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials">
@@ -713,7 +452,7 @@
             </div>
             <p>
               <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              La plataforma es excelente, ademas todos los instructores estan altamente capacitados y 
+              La plataforma es excelente, ademas todos los instructores estan altamente capacitados y
               cuentan con certificados otorgados por las más prestigiadas escuelas.
               <i class="bx bxs-quote-alt-right quote-icon-right"></i>
             </p>
@@ -732,7 +471,7 @@
             </div>
             <p>
               <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Me encanta, gracias a GSISTANT logre mi objetivo de bajar de peso y tonificar si gastar de más y lo mejor de tode desde 
+              Me encanta, gracias a GSISTANT logre mi objetivo de bajar de peso y tonificar si gastar de más y lo mejor de tode desde
               la comodidad de mi hogar si tener que ir a un gimnasio y pagar a un asesor.
               <i class="bx bxs-quote-alt-right quote-icon-right"></i>
             </p>
@@ -751,7 +490,7 @@
             </div>
             <p>
               <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              En menos de tres meses logré mis objetivos con GSISTANT, logré tonificar todo mi cuerpo y 
+              En menos de tres meses logré mis objetivos con GSISTANT, logré tonificar todo mi cuerpo y
               aumentar mi musculatura y gracias a eso tengo más pegue.
               <i class="bx bxs-quote-alt-right quote-icon-right"></i>
             </p>
@@ -770,7 +509,7 @@
             </div>
             <p>
               <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-               GSISTANT ofrece una gran cantidad de contenido que no habia visto antes, cuenta con planes que se adaptan a todo tipo de gente, 
+               GSISTANT ofrece una gran cantidad de contenido que no habia visto antes, cuenta con planes que se adaptan a todo tipo de gente,
                además en una plataforma en la cual puedes aprender y mejorar como entrenador.
               <i class="bx bxs-quote-alt-right quote-icon-right"></i>
             </p>
@@ -791,7 +530,7 @@
         </div>
       </div>
 
-      
+
       <div class="container mt-5 mx-auto">
 
         <div class="col-lg-6 col-md-6 info mt-4 mt-lg-0">
@@ -799,7 +538,7 @@
           <h4>Email:</h4>
           <p>gsistant.info@gmail.com<br>gsistant.support@gmail.com</p>
         </div>
-  
+
         <div class="col-lg-6 col-md-6 info mt-4 mt-lg-0 ">
           <i class="icofont-phone"></i>
           <h4>Telefono:</h4>
@@ -814,7 +553,7 @@
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
-      <img src="http://drive.google.com/uc?export=view&id=1C588Zfgug0dH43Y02g_2bxyfOY5yesYq" alt=""> 
+      <img src="http://drive.google.com/uc?export=view&id=1C588Zfgug0dH43Y02g_2bxyfOY5yesYq" alt="">
       <p>La mejor plataforma de ejercicio online.</p>
       <div class="social-links">
         <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -839,17 +578,17 @@
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="{{ asset('principal/assets/vendor/jquery/jquery.min.js')}}"></script>
-  <script src="{{ asset('principal/assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-  <script src="{{ asset('principal/assets/vendor/jquery.easing/jquery.easing.min.js')}}"></script>
-  <script src="{{ asset('principal/assets/vendor/php-email-form/validate.js')}}"></script>
-  <script src="{{ asset('principal/assets/vendor/jquery-sticky/jquery.sticky.js')}}"></script>
-  <script src="{{ asset('principal/assets/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
-  <script src="{{ asset('principal/assets/vendor/venobox/venobox.min.js')}}"></script>
-  <script src="{{ asset('principal/assets/vendor/owl.carousel/owl.carousel.min.js')}}"></script>
+  <script src="{{ asset('web/assets/vendor/jquery/jquery.min.js')}}"></script>
+  <script src="{{ asset('web/assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{ asset('web/assets/vendor/jquery.easing/jquery.easing.min.js')}}"></script>
+  <script src="{{ asset('web/assets/vendor/php-email-form/validate.js')}}"></script>
+  <script src="{{ asset('web/assets/vendor/jquery-sticky/jquery.sticky.js')}}"></script>
+  <script src="{{ asset('web/assets/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+  <script src="{{ asset('web/assets/vendor/venobox/venobox.min.js')}}"></script>
+  <script src="{{ asset('web/assets/vendor/owl.carousel/owl.carousel.min.js')}}"></script>
 
   <!-- Template Main JS File -->
-  <script src="{{ asset('principal/assets/js/main.js')}}"></script>
+  <script src="{{ asset('web/assets/js/main.js')}}"></script>
 
 </body>
 

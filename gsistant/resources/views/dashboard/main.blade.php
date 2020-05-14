@@ -27,55 +27,7 @@
   <body>
 
 
-      <nav class="navbar navbar-expand-lg bg-primary">
-   <div class="container">
-      <img src="{{ asset('pagina/assets/img/now-logo.png')}}" class="logo-nav" alt="">
-     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-       <i class="fas fa-sliders-h icon-toggler"></i>
-     </button>
-     <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-       <ul class="navbar-nav ">
-           <li class="nav-item">
-
-           </li>
-           <li class="nav-item">
-             <a class="nav-link" href="#"><i class="now-ui-icons shopping_shop item-m"></i>Principal</a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link" href="#"><i class="now-ui-icons media-2_sound-wave item-m"></i>Entrenamientos</a>
-           </li>
-           <li class="nav-item">
-               <a class="nav-link" data-toggle="tab" href="#profile" role="tab">
-                     <i class="now-ui-icons design_bullet-list-67 item-m"></i>
-                     Mi Panel de Entrenamientos
-               </a>
-           </li>
-           <li class="nav-item dropdown active">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <img src=" {{ asset('pagina/assets/images/users-profiles/default.png') }}" class="img-profile">
-                    {{Auth::user()->email}}
-                  </a>
-                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item txt-color" href="#"><i class="fas fa-user icono-m"></i>Perfil</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item txt-color" href="#"><i class="fas fa-hand-holding-usd  icono-m"></i>Suscripción</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item txt-color" href="{{ route('logout') }}"
-                                          onclick="event.preventDefault();
-                                          document.getElementById('logout-form').submit();">
-                                <i class="fas fa-sign-out-alt icono-m"></i>Cerrar Sesión</a>
-
-                  <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                      @csrf
-                  </form>
-
-                  </div>
-            </li>
-       </ul>
-     </div>
-   </div>
- </nav>
-
+         @include('dashboard.partials.header-admin')
 
 
 
