@@ -163,7 +163,7 @@
             <div class="content">
               <h3>Acerca de</h3>
               <p>
-                Somos especialistas en contratar mamados para formar mas mamados
+                Somos especialistas en contratar mamados para formar ms mamados
               </p>
               <p class="font-italic">
                 En GSISTANT te ofrecemos grandes beneficios que en otro lugar no podras encontrar:
@@ -802,7 +802,7 @@
   
         <div class="col-lg-6 col-md-6 info mt-4 mt-lg-0 ">
           <i class="icofont-phone"></i>
-          <h4>Call:</h4>
+          <h4>Telefono:</h4>
           <p>+1 5589 55488 51<br>+1 5589 22475 14</p>
         </div>
 
