@@ -65,7 +65,7 @@
            <li><a href="#specials">Specials</a></li>
           <li><a href="#events">Events</a></li> --}}
           <li><a href="#chefs">Entrenadores</a></li>
-          <li><a href="#gallery">Galeria</a></li>
+          <li><a href="#gallery">Galería</a></li>
           <li><a href="#contact">Contacto</a></li>
 
           <li class="book-a-table text-center"><a href="{{ route('login') }}">Iniciar Sesión</a></li>
@@ -82,18 +82,18 @@
 
         <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
 
-        <div class="carousel-inner" role="listbox">
+        <div class="carousel-inner" role="listbox" >
 
           <!-- Slide 1 -->
-          <div class="carousel-item active" style="background: url(http://drive.google.com/uc?export=view&id=1UYWxYiXUZ1w4s_XEf7eSo0afK6rN1lrM); background-size:100%;">
+          <div class="carousel-item active" style="background: url(http://drive.google.com/uc?export=view&id=1UYWxYiXUZ1w4s_XEf7eSo0afK6rN1lrM);">
             <div class="carousel-container">
               <div class="carousel-content">
                 {{-- <h2 class="animated fadeInDown"><span>Delicious</span> Restaurant</h2> --}}
                 <img src="http://drive.google.com/uc?export=view&id=1C588Zfgug0dH43Y02g_2bxyfOY5yesYq" alt="">
 
-                <p class="animated fadeInUp">Tu asistente personal de rutinas y planes alimentacion al que puedes tener acceso cuando quieras y en cualquier lugar</p>
+                <p class="animated fadeInUp">Tu asistente personal de rutinas y planes alimentación al que puedes tener acceso cuando quieras y en cualquier lugar.</p>
                 <div>
-                  <a href="#menu" class="btn-menu animated fadeInUp scrollto">Planes</a>
+                  <a href="#subscribe" class="btn-menu animated fadeInUp scrollto">Planes</a>
                   <a href="#aplicacion" class="btn-book animated fadeInUp scrollto">Nuestra App</a>
                 </div>
               </div>
@@ -101,11 +101,11 @@
           </div>
 
           <!-- Slide 2 -->
-          <div class="carousel-item" style="background: url(http://drive.google.com/uc?export=view&id=1CxiM1hpSnN_axHCy0XXtMErcIuQrDivU);background-size:100%;">
+          <div class="carousel-item" style="background: url(http://drive.google.com/uc?export=view&id=1CxiM1hpSnN_axHCy0XXtMErcIuQrDivU);">
             <div class="carousel-container">
               <div class="carousel-content">
                 <h2 class="animated fadeInDown">A tu alcance</h2>
-                <p class="animated fadeInUp">GSISTANT esta disponible a cualquier hora y el cualquier lugar. Puedes ver nuestro contenido desde cualquier dispositivo conectado a Internet.</p>
+                <p class="animated fadeInUp">GSISTANT está disponible a cualquier hora y el cualquier lugar. Puedes ver nuestro contenido desde cualquier dispositivo conectado a Internet.</p>
                 {{-- <div>
                   <a href="#menu" class="btn-menu animated fadeInUp scrollto">Our Menu</a>
                   <a href="#book-a-table" class="btn-book animated fadeInUp scrollto">Book a Table</a>
@@ -115,13 +115,13 @@
           </div>
 
           <!-- Slide 3 -->
-          <div class="carousel-item" style="background: url(http://drive.google.com/uc?export=view&id=1wZF680ldYclX6X2JI_sUPzadlRf4fWxj);background-size:100%;">
+          <div class="carousel-item" style="background: url(http://drive.google.com/uc?export=view&id=1wZF680ldYclX6X2JI_sUPzadlRf4fWxj);">
             <div class="carousel-background"><img src="assets/img/slide/slide-3.jpg" alt=""></div>
             <div class="carousel-container">
               <div class="carousel-content">
                 <h2 class="animated fadeInDown">Seguro</h2>
-                <p class="animated fadeInUp">Nuestros entrenadores e instructores estan altamente capacitados y disponibles las 24 horas todo el año. Ademas nuestro sistema
-                  de monitoreo implementado con Inteligencia Artificial asegurara que estes realizando correctamente tus rutinas.</p>
+                <p class="animated fadeInUp">Nuestros entrenadores e instructores están altamente capacitados y disponibles las 24 horas todo el año. 
+                  Además nuestro sistema de monitoreo implementado con Inteligencia Artificial asegurara que estés realizando correctamente tus rutinas.</p>
                 {{-- <div>
                   <a href="#menu" class="btn-menu animated fadeInUp scrollto">Our Menu</a>
                   <a href="#book-a-table" class="btn-book animated fadeInUp scrollto">Book a Table</a>
@@ -166,11 +166,11 @@
                 Somos especialistas en contratar mamados para formar ms mamados
               </p>
               <p class="font-italic">
-                En GSISTANT te ofrecemos grandes beneficios que en otro lugar no podras encontrar:
+                En GSISTANT te ofrecemos grandes beneficios que en otro lugar no podrás encontrar:
               </p>
               <ul>
                 <li><i class="bx bx-check-double"></i> Rutinas diseñadas por entrenadores certificados.</li>
-                <li><i class="bx bx-check-double"></i> Planes alimenticios diseñados cuidodosamente por expertos.</li>
+                <li><i class="bx bx-check-double"></i> Planes alimenticios diseñados cuidadosamente por expertos.</li>
                 <li><i class="bx bx-check-double"></i> Sistema inteligente de monitoreo de ejercicio.</li>
               </ul>
               <p>
@@ -187,11 +187,11 @@
     </section><!-- End About Section -->
 
     <!-- ======= Whu Us Section ======= -->
-    <section id="why-us" class="why-us">
+    <section id="subscribe" class="why-us">
       <div class="container">
 
         <div class="section-title">
-          <h2>Suscribete <span>para obten beneficios</span></h2>
+          <h2>Suscríbete <span>para obtén beneficios</span></h2>
           <p>Tenemos distintos planes que pueden adaptarse a tus necesidades y sin gastar de más</p>
         </div>
 
@@ -201,7 +201,7 @@
             <div class="box">
               <span>Gratis</span>
               <h4>$0.00</h4>
-              <p>Acceso a rutinas basicas y de calentamiento, asi como algunas rutinas de ejercicios de cardeo.</p>
+              <p>Acceso a rutinas básicas y de calentamiento, así como algunas rutinas de ejercicios de cardio.</p>
               <br>
               <br>
               <a href="{{route('login')}}" class="btn-menu animated fadeInUp scrollto">Comprar</a>
@@ -212,7 +212,7 @@
             <div class="box">
               <span>Principiante</span>
               <h4>$150.00/mes</h4>
-              <p>Ideal para todos aquellos que quieran iniciarse en el mundo del ejercicio fisico, con rutinas especiales para cada zona del cuerpo.</p>
+              <p>Ideal para todos aquellos que quieran iniciarse en el mundo del ejercicio físico, con rutinas especiales para cada zona del cuerpo.</p>
               <a href="{{route('login')}}" class="btn-menu animated fadeInUp scrollto">Comprar</a>
             </div>
           </div>
@@ -221,7 +221,7 @@
             <div class="box">
               <span>Intermedio</span>
               <h4>$250.00/mes</h4>
-              <p>Acceso a una gran cantidad de rutinas asi como planes de rutinas especiales y asesoria personal por parte de nuestros entrenadores.</p>
+              <p>Acceso a una gran cantidad de rutinas, así como planes de rutinas especiales y asesoría personal por parte de nuestros entrenadores.</p>
               <a href="{{route('login')}}" class="btn-menu animated fadeInUp scrollto">Comprar</a>
             </div>
           </div>
@@ -230,7 +230,7 @@
             <div class="box">
               <span>Experto</span>
               <h4>$400.00/mes</h4>
-              <p>Acceso a todo el contenido, rutinas especiales, planes alimenticios y asesoria personal a cualquier hora.</p>
+              <p>Acceso a todo el contenido, rutinas especiales, planes alimenticios y asesoría personal a cualquier hora.</p>
             <a href="{{route('login')}}" class="btn-menu animated fadeInUp scrollto">Comprar</a>
             </div>
           </div>
@@ -259,7 +259,7 @@
                     </p>
 
                     <p>
-                      Podras realizar todo lo que hacias desde tu computadora pero ahora en tu telefono o tablet.
+                      Podrás realizar todo lo que hacías desde tu computadora, pero ahora en tu teléfono o tablet. 
                     </p>
                     <a href="https://play.google.com/store?hl=es_MX"><img class="w-50 h-50 float-left"  src="http://drive.google.com/uc?export=view&id=1PlpyLBETKz10ZEYNxAJZxgnAz4NllqgV" alt=""></a>
 
@@ -285,7 +285,7 @@
 
         <div class="section-title">
           <h2><span>Nuestros entrenadores</span></h2>
-          <p>Nuestros entrenadores estan disponibles todo el tiempo y cuentan con certificados que los avalan.</p>
+          <p>Nuestros entrenadores están disponibles todo el tiempo y cuentan con certificados que los avalan.</p>
         </div>
 
         <div class="row">
@@ -298,7 +298,7 @@
                 <span>Entrenador y nutriologo</span>
                 <div class="social">
                   <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href="https://www.facebook.com/karlosp0/"><i class="icofont-facebook"></i></a>
                   <a href=""><i class="icofont-instagram"></i></a>
                   <a href=""><i class="icofont-linkedin"></i></a>
                 </div>
@@ -314,7 +314,7 @@
                 <span>Entrenador</span>
                 <div class="social">
                   <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href="https://www.facebook.com/MantenteHidratado/"><i class="icofont-facebook"></i></a>
                   <a href=""><i class="icofont-instagram"></i></a>
                   <a href=""><i class="icofont-linkedin"></i></a>
                 </div>
@@ -330,7 +330,7 @@
                 <span>Entrenador</span>
                 <div class="social">
                   <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href="https://www.facebook.com/cesar.gaytansaenz/"><i class="icofont-facebook"></i></a>
                   <a href=""><i class="icofont-instagram"></i></a>
                   <a href=""><i class="icofont-linkedin"></i></a>
                 </div>
@@ -348,7 +348,7 @@
       <div class="container-fluid">
 
         <div class="section-title">
-          <h2><span>Galeria</span></h2>
+          <h2><span>Galería</span></h2>
 
         </div>
 
@@ -452,7 +452,7 @@
             </div>
             <p>
               <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              La plataforma es excelente, ademas todos los instructores estan altamente capacitados y
+              La plataforma es excelente, además todos los instructores están altamente capacitados y
               cuentan con certificados otorgados por las más prestigiadas escuelas.
               <i class="bx bxs-quote-alt-right quote-icon-right"></i>
             </p>
@@ -471,7 +471,7 @@
             </div>
             <p>
               <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Me encanta, gracias a GSISTANT logre mi objetivo de bajar de peso y tonificar si gastar de más y lo mejor de tode desde
+              Me encanta, gracias a GSISTANT logre mi objetivo de bajar de peso y tonificar si gastar de más y lo mejor de todo desde
               la comodidad de mi hogar si tener que ir a un gimnasio y pagar a un asesor.
               <i class="bx bxs-quote-alt-right quote-icon-right"></i>
             </p>
@@ -509,8 +509,8 @@
             </div>
             <p>
               <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-               GSISTANT ofrece una gran cantidad de contenido que no habia visto antes, cuenta con planes que se adaptan a todo tipo de gente,
-               además en una plataforma en la cual puedes aprender y mejorar como entrenador.
+              GSISTANT ofrece una gran cantidad de contenido que no había visto antes, cuenta con planes que se adaptan a todo tipo de gente,
+              además, en una plataforma en la cual puedes aprender y mejorar como entrenador.
               <i class="bx bxs-quote-alt-right quote-icon-right"></i>
             </p>
           </div>
@@ -525,8 +525,8 @@
       <div class="container">
 
         <div class="section-title">
-          <h2><span>Contactanos</span></h2>
-          <p>Si quieres conocer más acerca de nosotros o si tienes alguna duda puede contactarnos vía correo electronico o vía telefonica.</p>
+          <h2><span>Contáctanos</span></h2>
+          <p>Si quieres conocer más acerca de nosotros o si tienes alguna duda puede contactarnos vía correo electrónico o vía telefónica.</p>
         </div>
       </div>
 
@@ -541,7 +541,7 @@
 
         <div class="col-lg-6 col-md-6 info mt-4 mt-lg-0 ">
           <i class="icofont-phone"></i>
-          <h4>Telefono:</h4>
+          <h4>Teléfono:</h4>
           <p>+1 5589 55488 51<br>+1 5589 22475 14</p>
         </div>
 
