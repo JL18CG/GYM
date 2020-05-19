@@ -16,7 +16,7 @@ class VideosRutinas extends Migration
         Schema::create('videos_rutinas', function (Blueprint $table) {
             $table->id();
             $table->string('nombre');
-            $table->foreignId('id_rutina')->constrained('rutinas')->onDelete('cascade');
+            $table->foreignId('id_rutina')->constrained('rutinas');
             $table->string('url');
             $table->timestamps();
         });

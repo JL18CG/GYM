@@ -15,7 +15,7 @@ class PlanesAlimenticios extends Migration
     {
         Schema::create('planes_alimenticios', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('id_user')->constrained('users')->onDelete('cascade');
+            $table->foreignId('id_user')->constrained('users');
             $table->string('nombre',40);
             $table->string('imagen');
             $table->enum('aprobado', ['si', 'no'])->default('no');
