@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateRutinasTable extends Migration
+class VideosPlanesAlimenticios extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,14 @@ class CreateRutinasTable extends Migration
      */
     public function up()
     {
-        Schema::create('rutinas', function (Blueprint $table) {
+        Schema::create('videos_planes_alimenticios', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('id_user')->constrained('users')->onDelete('cascade');
-            $table->string('nombre',40);
-            $table->string('imagen');
-            $table->enum('aprobado', ['si', 'no'])->default('no');
+            $table->string('nombre');
+            $table->foreignId('id_plan_alimenticio')->constrained('planes_alimenticios')->onDelete('cascade');
+            $table->string('url');
             $table->timestamps();
         });
+
     }
 
     /**
@@ -30,6 +30,6 @@ class CreateRutinasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('rutinas');
+        //
     }
 }
