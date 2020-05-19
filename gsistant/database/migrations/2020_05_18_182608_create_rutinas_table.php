@@ -16,6 +16,7 @@ class CreateRutinasTable extends Migration
         Schema::create('rutinas', function (Blueprint $table) {
             $table->id();
             $table->foreignId('id_user')->constrained('users')->onDelete('cascade');
+            $table->foreignId('id_video')->constrained('videos')->onDelete('cascade');
             $table->string('nombre',40);
             $table->string('imagen');
             $table->enum('aprobado', ['si', 'no'])->default('no');
