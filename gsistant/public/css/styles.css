@@ -139,3 +139,8 @@ a:hover{
 .clear-filter[filter-color="orange"]{
         background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba(0, 0, 0, 0.6)) !important;
 }
+
+
+.boton{
+    margin-top:-6px !important;
+}

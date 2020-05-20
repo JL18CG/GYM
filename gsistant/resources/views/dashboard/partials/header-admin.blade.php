@@ -1,4 +1,4 @@
-    <nav class="navbar navbar-expand-lg bg-primary">
+    <nav class="navbar navbar-expand-lg bg-dark">
    <div class="container">
     <img src="{{ asset('pagina/assets/img/logo-blanco.png')}}" class="logo-nav logo-size" alt="">
    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -8,7 +8,7 @@
      <ul class="navbar-nav">
 
          <li class="nav-item">
-             <a class="nav-link nav-link-color" data-toggle="tab" href="#profile" role="tab">
+             <a class="nav-link nav-link-color" data-toggle="tab" href="{{route('admin.index')}}" role="tab">
                    <i class="now-ui-icons tech_laptop"></i>
                    Administradores
 
