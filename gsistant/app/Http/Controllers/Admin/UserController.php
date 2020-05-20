@@ -1,10 +1,9 @@
 <?php
 
-namespace App\Http\Controllers\User;
+namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Session;
 
 class UserController extends Controller
 {
@@ -13,16 +12,17 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-
-     public function __construct(){
-        $this->middleware(['auth']);
-     }
-
-
-    public function index()
-    {
-        return view('dashboard.user.index');
+    public function __construct(){
+        $this->middleware('auth');
+        $this->middleware('rol.admin');
     }
+
+
+   public function index()
+   {
+       return view('dashboard.admin.index');
+   }
+
 
     /**
      * Show the form for creating a new resource.

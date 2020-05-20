@@ -1,8 +1,8 @@
 @extends('dashboard.main')
 
 
-@section('content')
-
+@section('content-user')
+    <h1> User wey </h1>
 @endsection
 
 
