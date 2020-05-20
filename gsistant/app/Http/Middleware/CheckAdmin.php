@@ -15,6 +15,12 @@ class CheckAdmin
      */
     public function handle($request, Closure $next)
     {
-        return $next($request);
+        if(auth()->user()->rol_id == '1'){
+            
+            return $next($request);
+            
+        }
+
+        return redirect('/dashboard');
     }
 }

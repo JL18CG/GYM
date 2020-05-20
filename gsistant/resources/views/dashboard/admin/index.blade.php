@@ -1,8 +1,9 @@
 @extends('dashboard.main')
 
 
-@section('content')
+@section('content-admin')
 
+<h1> Admin wey </h1>
 @endsection
 
 
