@@ -22,6 +22,7 @@
     <!-- CSS personalizados -->
     <link href="{{ asset('css/all.css')}}"  rel="stylesheet"/>
     <link href="{{ asset('css/styles.css')}}"  rel="stylesheet"/>
+    <script src="{{ asset("js/app.js") }} "> </script>
 
   </head>
   <body>
@@ -31,6 +32,7 @@
         @yield('content-admin')
     @endif
 
+    
     @if (auth() -> user() ->rol_id =='2')
         @include('dashboard.partials.header-user')
         @yield('content-user')

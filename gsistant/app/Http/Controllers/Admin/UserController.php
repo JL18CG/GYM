@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers\admin;
 
-use App\Http\Controllers\Controller;
+use App\User;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class UserController extends Controller
 {
@@ -20,7 +21,10 @@ class UserController extends Controller
 
    public function index()
    {
-       return view('dashboard.admin.index');
+
+
+        $users = User::orderBy('id','asc')->paginate(10);
+        return view('dashboard.admin.index', ['users' => $users]);
    }
 
 
