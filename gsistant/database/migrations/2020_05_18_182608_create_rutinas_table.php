@@ -15,11 +15,11 @@ class CreateRutinasTable extends Migration
     {
         Schema::create('rutinas', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('id_user')->constrained('users')->onDelete('cascade');
+            $table->bigInteger('id_user')->nullable();
             $table->string('nombre',40);
             $table->string('imagen');
             $table->enum('aprobado', ['si', 'no'])->default('no');
-            $table->foreignId('id_user')->constrained('users');
+            $table->bigInteger('id_user')->nullable();
             $table->timestamps();
 
         });

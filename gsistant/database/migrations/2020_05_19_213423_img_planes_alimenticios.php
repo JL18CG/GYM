@@ -15,7 +15,7 @@ class ImgPlanesAlimenticios extends Migration
     {
         Schema::create('imgs_planes_alimenticios', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('id_plan_alimenticio')->constrained('planes_alimenticios');
+            $table->bigInteger('id_plan_alimenticio')->nullable();
             $table->string('imagen');
             $table->timestamps();
         });

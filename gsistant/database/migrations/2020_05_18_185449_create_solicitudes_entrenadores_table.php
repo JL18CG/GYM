@@ -15,7 +15,7 @@ class CreateSolicitudesEntrenadoresTable extends Migration
     {
         Schema::create('solicitudes_entrenadores', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('id_user')->constrained('users');
+            $table->bigInterger('id_user')->nullable();
             $table->string('titulo');
             $table->string('descripcion');
             $table->timestamps();

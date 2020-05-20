@@ -25,7 +25,7 @@ class CreateUsersTable extends Migration
             $table->double('peso', 8, 2)->nullable();
             $table->double('estatura', 8, 2)->nullable();
             $table->integer('suscripcion')->default(0);
-            $table->date('nacimeiento')->nullable();
+            $table->date('nacimiento')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

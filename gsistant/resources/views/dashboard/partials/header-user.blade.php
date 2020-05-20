@@ -10,7 +10,7 @@
          <li class="nav-item">
              <a class="nav-link nav-link-color" data-toggle="tab" href="#profile" role="tab">
                    <i class="now-ui-icons tech_laptop"></i>
-                   Administradores
+                   Entrenamientos
 
              </a>
          </li>
@@ -18,7 +18,7 @@
          <li class="nav-item">
              <a class="nav-link nav-link-color" data-toggle="tab" href="#profile" role="tab">
                    <i class="  now-ui-icons business_badge  "></i>
-                   Gestión de Usuarios
+                   Planes Alimenticios
 
              </a>
          </li>
@@ -28,7 +28,7 @@
          <li class="nav-item">
              <a class="nav-link nav-link-color" data-toggle="tab" href="#profile" role="tab">
                    <i class="  now-ui-icons files_single-copy-04  "></i>
-                   Generación de Reportes
+                   Asistente Virtual
 
              </a>
          </li>

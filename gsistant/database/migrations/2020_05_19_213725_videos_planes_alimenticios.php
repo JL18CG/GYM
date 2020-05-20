@@ -16,7 +16,7 @@ class VideosPlanesAlimenticios extends Migration
         Schema::create('videos_planes_alimenticios', function (Blueprint $table) {
             $table->id();
             $table->string('nombre');
-            $table->foreignId('id_plan_alimenticio')->constrained('planes_alimenticios');
+            $table->bigInteger('id_plan_alimenticio')->nullable();
             $table->string('url');
             $table->timestamps();
         });

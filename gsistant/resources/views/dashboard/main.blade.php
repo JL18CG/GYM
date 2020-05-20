@@ -26,7 +26,7 @@
   </head>
   <body>
 
-    @if (auth() -> user() ->rol_id =='0')
+    @if (auth() -> user() ->rol_id =='1')
         @include('dashboard.partials.header-admin')
         @yield('content-admin')
     @endif
@@ -38,6 +38,8 @@
     
 
 
+
+    
   
 
 

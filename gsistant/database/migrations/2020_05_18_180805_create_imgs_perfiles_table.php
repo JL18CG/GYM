@@ -15,7 +15,7 @@ class CreateImgsPerfilesTable extends Migration
     {
         Schema::create('imgs_perfiles', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('id_user')->constrained('users');
+            $table->bigInteger('id_user')->nullable();
             $table->string('imagen');
             $table->string('tipo');
             $table->timestamps();

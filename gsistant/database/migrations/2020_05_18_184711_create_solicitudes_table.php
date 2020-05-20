@@ -15,10 +15,10 @@ class CreateSolicitudesTable extends Migration
     {
         Schema::create('solicitudes', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('id_user')->constrained('users');
+            $table->bigInteger('id_user')->nullable();
             $table->string('titulo');
             $table->string('descripcion');
-            $table->foreignId('id_rutina')->constrained('rutinas');
+            $table->bigInteger('id_rutina')->nullable();
             $table->timestamps();
         });
     }
