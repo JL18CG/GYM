@@ -30,7 +30,7 @@ Route::resource('admin', 'Admin\UserController');
 Route::resource('solicitudes', 'Admin\SolicitudController');
 Route::resource('dashboard', 'User\UserController');
 Route::resource('entrenamientos', 'User\RutinaController');
-Route::post('solicitudes/validar/{rutina}', 'Admin\RutinaController@proccess');
+
 
 
 /*

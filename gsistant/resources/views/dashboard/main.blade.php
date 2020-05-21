@@ -33,18 +33,18 @@
 
     @endif
 
-    
+
     @if (auth() -> user() ->rol_id =='2')
         @include('dashboard.partials.header-user')
         @yield('content-user')
-        @include('dashboard.partials.footer')
+        {{-- @include('dashboard.partials.footer') --}}
     @endif
-    
 
 
 
-    
-  
+
+
+
 
 
     {{-- <label>  {{auth() -> user() ->rol ->key}}  </label> --}}

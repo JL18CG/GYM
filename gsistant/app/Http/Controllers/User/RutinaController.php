@@ -3,6 +3,9 @@
 namespace App\Http\Controllers\User;
 
 use App\Rutina;
+
+use App\User;
+
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -15,8 +18,12 @@ class RutinaController extends Controller
      */
     public function index()
     {
+
         $rutinas = Rutina::orderBy('nombre');
-        
+        $sub=User::all();
+
+        $rutinas = Rutina::all()->where('',$sub)->paginate(10);
+
    //echo('djsalkfjhlkdfjm');
     //dd($rutinas);
     return view('dashboard.user.rutina',['rutinas'=>$rutinas]);
