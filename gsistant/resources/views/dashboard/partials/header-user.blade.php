@@ -1,14 +1,18 @@
     <nav class="navbar navbar-expand-lg bg-primary">
    <div class="container">
+    
+    <a href="/">
     <img src="{{ asset('pagina/assets/img/logo-blanco.png')}}" class="logo-nav logo-size" alt="">
-   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
      <i class="fas fa-sliders-h icon-toggler"></i>
    </button>
    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
      <ul class="navbar-nav">
 
          <li class="nav-item">
-             <a class="nav-link nav-link-color" data-toggle="tab" href="#profile" role="tab">
+         <a class="nav-link nav-link-color"  href="{{route('entrenamientos.index')}}">
                    <i class="now-ui-icons tech_laptop"></i>
                    Entrenamientos
 

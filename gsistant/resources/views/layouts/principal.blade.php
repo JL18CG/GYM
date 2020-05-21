@@ -51,8 +51,9 @@
 
       <div class="logo mr-auto">
       {{--  <h1 class="text-light"><a href="index.html"><span>MAMALAND</span></a></h1>--}}
-         <img src="http://drive.google.com/uc?export=view&id=1C588Zfgug0dH43Y02g_2bxyfOY5yesYq" alt="">
-
+      <a href="/">
+      <img src="http://drive.google.com/uc?export=view&id=1C588Zfgug0dH43Y02g_2bxyfOY5yesYq" alt="">
+      </a>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
@@ -61,9 +62,6 @@
         <ul>
           <li class="active"><a href="#hero">Inicio</a></li>
           <li><a href="#about">Acerca de</a></li>
-         {{-- <li><a href="#menu">Menu</a></li>
-           <li><a href="#specials">Specials</a></li>
-          <li><a href="#events">Events</a></li> --}}
           <li><a href="#chefs">Entrenadores</a></li>
           <li><a href="#gallery">Galería</a></li>
           <li><a href="#contact">Contacto</a></li>
