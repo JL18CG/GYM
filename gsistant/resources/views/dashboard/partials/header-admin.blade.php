@@ -8,7 +8,7 @@
      <ul class="navbar-nav">
 
          <li class="nav-item">
-             <a class="nav-link nav-link-color" data-toggle="tab" href="{{route('admin.index')}}" role="tab">
+             <a class="nav-link nav-link-color"   href="{{route('admin.index')}}">
                    <i class="now-ui-icons tech_laptop"></i>
                    Administradores
 
@@ -16,7 +16,7 @@
          </li>
 
          <li class="nav-item">
-             <a class="nav-link nav-link-color" data-toggle="tab" href="#profile" role="tab">
+             <a class="nav-link nav-link-color" href="#">
                    <i class="  now-ui-icons business_badge  "></i>
                    Gestión de Usuarios
 
@@ -26,7 +26,7 @@
 
 
          <li class="nav-item">
-             <a class="nav-link nav-link-color" data-toggle="tab" href="#profile" role="tab">
+             <a class="nav-link nav-link-color" href="#profile">
                    <i class="  now-ui-icons files_single-copy-04  "></i>
                    Generación de Reportes
 
@@ -34,7 +34,7 @@
          </li>
          <li class="nav-item dropdown active">
                 <a class="nav-link dropdown-toggle profile-lik" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="fas fa-user mr-2"></i>Admin
+                    <i class="fas fa-user mr-2"></i>{{auth()->user()->email}}
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
                       <a class="dropdown-item txt-color" href="#"><i class="fas fa-cogs  icono-m"></i>Configuración</a>
