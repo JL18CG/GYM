@@ -1,8 +1,6 @@
 @extends('dashboard.main')
 
 @section('content-user')
-    
-@endsection
 <div class="row">
     @foreach($rutinas  as $r) 
           

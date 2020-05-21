@@ -15,15 +15,21 @@ class UserTableSeeder extends Seeder
         //
 
         User::truncate();
-        for($i = 1; $i<=20; $i++){
+        for($i = 1; $i<=10; $i++){
             User::create([
-                'email' => "Usuario$i@gmail.com",
+                'email' => "admin$i@gmail.com",
                 'password'=>Hash::make("lacontra$i"),
                 'rol_id'=>"1"         
             ]);
         }
-        User::create([
-            
-        ]);       
+
+        for($a = 1; $a<=4; $a++){
+            User::create([
+                'email' => "user$a@gmail.com",
+                'password'=>Hash::make("lacontra$a"),
+                'rol_id'=>"2",
+                'name'=>"Usuario Prueba $a"         
+            ]);
+        }
     }
 }

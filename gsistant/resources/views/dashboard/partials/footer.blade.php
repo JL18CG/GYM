@@ -1,7 +1,7 @@
 
 <!-- ======= Footer ======= -->
 <footer id="footer">
-    <div class="container">
+
       <img src="http://drive.google.com/uc?export=view&id=1C588Zfgug0dH43Y02g_2bxyfOY5yesYq" alt="">
       <p>La mejor plataforma de ejercicio online.</p>
       <div class="social-links">
@@ -20,5 +20,4 @@
 
         
       </div>
-    </div>
   </footer>

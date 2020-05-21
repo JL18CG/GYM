@@ -16,9 +16,9 @@
          </li>
 
          <li class="nav-item">
-             <a class="nav-link nav-link-color" href="#">
+            <a class="nav-link nav-link-color" href="{{route('solicitudes.index')}}">
                    <i class="  now-ui-icons business_badge  "></i>
-                   Gestión de Usuarios
+                   Gestión de Solicitudes
 
              </a>
          </li>

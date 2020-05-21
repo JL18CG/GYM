@@ -1,12 +1,14 @@
 <?php
 
-namespace App\Http\Controllers\User;
+namespace App\Http\Controllers\Admin;
 
-use App\Rutina;
+use App\User;
+use App\Solicitude;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 
-class RutinaController extends Controller
+class SolicitudController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,11 +17,13 @@ class RutinaController extends Controller
      */
     public function index()
     {
-        $rutinas = Rutina::orderBy('nombre');
-        
-   //echo('djsalkfjhlkdfjm');
-    //dd($rutinas);
-    return view('dashboard.user.rutina',['rutinas'=>$rutinas]);
+
+        $solis = DB::table('solicitudes')
+            ->join('users', 'users.id', '=', 'solicitudes.id_user')
+            ->select('solicitudes.*', 'users.email')
+            ->get();
+
+        return view('dashboard.admin.solicitud.index', ['solis' => $solis]);
     }
 
     /**
@@ -83,8 +87,10 @@ class RutinaController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Solicitude $solicitude)
     {
-        //
+   
+        $solicitude->delete();
+        return back()->with('status', 'Solicitud Eliminada Correctamente');
     }
 }

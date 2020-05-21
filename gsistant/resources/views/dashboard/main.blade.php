@@ -30,7 +30,7 @@
     @if (auth() -> user() ->rol_id =='1')
         @include('dashboard.partials.header-admin')
         @yield('content-admin')
-        @include('dashboard.partials.footer')
+
     @endif
 
     

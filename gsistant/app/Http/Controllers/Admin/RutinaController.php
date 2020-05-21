@@ -1,10 +1,9 @@
 <?php
 
-namespace App\Http\Controllers\User;
+namespace App\Http\Controllers\Admin;
 
-use App\Rutina;
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
 
 class RutinaController extends Controller
 {
@@ -15,11 +14,7 @@ class RutinaController extends Controller
      */
     public function index()
     {
-        $rutinas = Rutina::orderBy('nombre');
-        
-   //echo('djsalkfjhlkdfjm');
-    //dd($rutinas);
-    return view('dashboard.user.rutina',['rutinas'=>$rutinas]);
+        //
     }
 
     /**
