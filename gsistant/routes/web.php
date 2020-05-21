@@ -28,7 +28,7 @@ Auth::routes();
 
 Route::resource('admin', 'Admin\UserController');
 Route::resource('dashboard', 'User\UserController');
-Route::resource('dashboard/entrenamientos', 'User\RutinaController');
+Route::resource('entrenamientos', 'User\RutinaController');
 
 
 
