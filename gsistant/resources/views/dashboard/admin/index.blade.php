@@ -4,8 +4,8 @@
 @section('content-admin')
 
 <div class="container">
-
-    <a class="btn btn-success mt-3 mb-3" href="{{ route('admin.create') }}">
+    @include('dashboard.partials.session-flash-status')
+    <a class="btn btn-success mb-3" href="{{ route('admin.create') }}">
         <i class="fa fa-plus"></i>  Crear
     </a>
     <table class="table">
@@ -20,14 +20,13 @@
     
         <tbody>
             @foreach ($users as $user)
-            @if (auth()->user()->id =! $user->id and auth()->user()->id_rol == 1)
+            @if (auth()->user()->id != $user->id && $user->rol_id=="1")
             <tr class="text-center">
                 <td> Administrador</td>
                 <td> {{ $user->email }}</td>
                 <td> {{ $user->created_at }}</td>
         
                 <td>
-                    <a href="{{ route('admin.show',$user->id) }}" class="btn btn-info boton"><i class="fa fa-eye"></i></a>
                     <a href="{{ route('admin.edit',$user->id) }}" class="btn btn-info boton"><i class="fa fa-edit"></i></a>
         
             
@@ -69,7 +68,7 @@
                 data-action="{{ route('admin.destroy',0) }}">
                 @method('DELETE')
                 @csrf
-                <button type="submit" class="btn btn-danger">Eliminar Usuario</button>
+                <button type="submit" class="btn btn-danger">Eliminar Administrador</button>
             </form>
         </div>
       </div>

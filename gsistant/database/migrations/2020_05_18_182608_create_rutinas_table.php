@@ -15,7 +15,6 @@ class CreateRutinasTable extends Migration
     {
         Schema::create('rutinas', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('id_user')->nullable();
             $table->string('nombre',40);
             $table->string('imagen');
             $table->enum('aprobado', ['si', 'no'])->default('no');
