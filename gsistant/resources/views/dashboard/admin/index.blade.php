@@ -8,6 +8,12 @@
     <a class="btn btn-success mb-3" href="{{ route('admin.create') }}">
         <i class="fa fa-plus"></i>  Crear
     </a>
+    <a class="btn btn-info mb-3" href="{{ route('admin.export') }}">
+      <i class="fa fa-file-excel"></i>  Exportar
+    </a>
+    <a class="btn btn-warning mb-3" href="{{ route('admin.export') }}">
+      <i class="fa fa-file-excel"></i>  Importar
+    </a>
     <table class="table">
         <thead class="thead-dark">
           <tr class="text-center">

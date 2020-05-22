@@ -16,22 +16,15 @@
          </li>
 
          <li class="nav-item">
-             <a class="nav-link nav-link-color" href="#">
+            <a class="nav-link nav-link-color" href="{{route('solicitudes.index')}}">
                    <i class="  now-ui-icons business_badge  "></i>
-                   Gestión de Usuarios
+                   Gestión de Solicitudes
 
              </a>
          </li>
 
 
 
-         <li class="nav-item">
-             <a class="nav-link nav-link-color" href="#profile">
-                   <i class="  now-ui-icons files_single-copy-04  "></i>
-                   Generación de Reportes
-
-             </a>
-         </li>
          <li class="nav-item dropdown active">
                 <a class="nav-link dropdown-toggle profile-lik" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <i class="fas fa-user mr-2"></i>{{auth()->user()->email}}

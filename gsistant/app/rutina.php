@@ -8,6 +8,6 @@ class Rutina extends Model
 {
     protected $fillable = [
         'id_user','nombre','imagen','aprobado','nivelsuscripcion'
-        
+
         ];
 }
