@@ -18,16 +18,16 @@
 
              </a>
          </li>
-
+         @if (Auth::user()->suscripcion=="3")
          <li class="nav-item">
-             <a class="nav-link nav-link-color" data-toggle="tab" href="#profile" role="tab">
-                   <i class="  now-ui-icons business_badge  "></i>
-                   Planes Alimenticios
+            <a class="nav-link nav-link-color" data-toggle="tab" href="#profile" role="tab">
+                  <i class="  now-ui-icons business_badge  "></i>
+                  Planes Alimenticios
 
-             </a>
-         </li>
-
-
+            </a>
+        </li> 
+         @endif
+        
 
          <li class="nav-item">
              <a class="nav-link nav-link-color" data-toggle="tab" href="#profile" role="tab">
@@ -36,9 +36,19 @@
 
              </a>
          </li>
+         @if (Auth::user()->rol_id=="2")
+         <li class="nav-item">
+            <a class="nav-link nav-link-color" href="{{ route('agregarrutina.create') }}" >
+                  <i class="  now-ui-icons files_single-copy-04  "></i>
+                  Agregar rutina
+
+            </a>
+        </li>  
+         @endif
+         
          <li class="nav-item dropdown active">
                 <a class="nav-link dropdown-toggle profile-lik" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="fas fa-user mr-2"></i>Admin
+                    <i class="fas fa-user mr-2"></i>{{auth()->user()->email}}
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
                       <a class="dropdown-item txt-color" href="#"><i class="fas fa-cogs  icono-m"></i>Configuración</a>
