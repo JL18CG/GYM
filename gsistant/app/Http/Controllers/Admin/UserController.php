@@ -3,8 +3,13 @@
 namespace App\Http\Controllers\admin;
 
 use App\User;
+use App\Exports\UsersExport;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\StoreUserPost;
+use App\Http\Requests\UpdateUserPut;
+use Illuminate\Support\Facades\Hash;
+use Maatwebsite\Excel\Facades\Excel;
 
 class UserController extends Controller
 {
@@ -23,11 +28,13 @@ class UserController extends Controller
    {
 
 
-        $users = User::orderBy('id','asc')->paginate(10);
+        $users = User::orderBy('created_at','desc')->paginate(20);
         return view('dashboard.admin.index', ['users' => $users]);
    }
 
-
+   public function export(){
+    return Excel::download(new UsersExport, 'usuarios.xlsx');
+   }
     /**
      * Show the form for creating a new resource.
      *
@@ -35,7 +42,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        //
+        return view('dashboard.admin.crear', ['admin' => new User()]);
     }
 
     /**
@@ -44,9 +51,16 @@ class UserController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreUserPost $request)
     {
-        //
+        User::create(
+            [
+                'email' => $request['email'],
+                'password' =>  Hash::make($request['password']),
+                'rol_id' =>'1'
+            ]
+        );
+        return back()->with('status', 'Administrador creado con exito');
     }
 
     /**
@@ -66,9 +80,10 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(User $admin)
     {
-        //
+        
+        return view('dashboard.admin.actualizar', ["admin" => $admin]);
     }
 
     /**
@@ -78,9 +93,27 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(UpdateUserPut $request, User $admin)
     {
-        //
+        if($request['pass1']==null){
+            $admin->update(
+                [
+
+                    'email' => $request['email'],
+
+                ]
+            );
+        }else{
+            $admin->update(
+                [
+                    'email' => $request['email'],
+                    'password'=> Hash::make($request['pas1'])
+                ]
+            );
+
+        }
+
+        return back()->with('status', 'Usuario actualizado con exito');
     }
 
     /**
@@ -89,8 +122,9 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(User $admin)
     {
-        //
+        $admin->delete();
+        return back()->with('status', 'Usuario eliminado con exito');
     }
 }

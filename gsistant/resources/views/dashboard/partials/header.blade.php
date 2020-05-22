@@ -1,6 +1,6 @@
     <nav class="navbar navbar-expand-lg bg-primary">
    <div class="container">
-    <img src="{{ asset('pagina/assets/img/logo-blanco.png')}}" class="logo-nav logo-size" alt="">
+    <img src="{{ asset('pagina/assets/img/logo-blanco.png')}}" class="logo-nav logo-size" alt="" href="/">
    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
      <i class="fas fa-sliders-h icon-toggler"></i>
    </button>
@@ -50,4 +50,4 @@
    </nav>
 
 
-   
+

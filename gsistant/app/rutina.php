@@ -4,12 +4,10 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class rutina extends Model
+class Rutina extends Model
 {
+    protected $fillable = [
+        'id_user','nombre','imagen','aprobado','nivelsuscripcion'
 
-protected $fillable = [
-'id_user','nombre','imagen','aprobado'
-
-];
-
+        ];
 }

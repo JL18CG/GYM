@@ -27,13 +27,15 @@ Auth::routes();
 
 
 Route::resource('admin', 'Admin\UserController');
+Route::resource('solicitudes', 'Admin\SolicitudController');
 Route::resource('dashboard', 'User\UserController');
-
-
-
-
+Route::resource('entrenamientos', 'User\RutinaController');
+Route::resource('agregarrutina', 'User\RutinaController');
+Route::resource('reportes', 'Admin\ReporteController');
+Route::post('solicitudes/validar/{rutina}', 'Admin\RutinaController@proccess');
+Route::get('reportes/usuario/{user}', 'Admin\ReporteController@post')->name('post-coment.post');
+Route::get('export', 'Admin\UserController@export')->name('admin.export');
 /*
-
 Route::resource('dashboard/post', 'dashboard\PostController');
 Route::post('dashboard/post/{post}/image', 'dashboard\PostController@image')->name('post.image');
 Route::get('dashboard/post/image-dowload/{image}', 'dashboard\PostController@imageDowload')->name('post.image-dowload');

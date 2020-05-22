@@ -30,23 +30,25 @@
     @if (auth() -> user() ->rol_id =='1')
         @include('dashboard.partials.header-admin')
         @yield('content-admin')
+
     @endif
 
-    
+
     @if (auth() -> user() ->rol_id =='2')
         @include('dashboard.partials.header-user')
         @yield('content-user')
+        {{-- @include('dashboard.partials.footer') --}}
     @endif
-    
 
 
 
-    
-  
+
+
+
 
 
     {{-- <label>  {{auth() -> user() ->rol ->key}}  </label> --}}
-
+    <script src="{{ asset("js/app.js") }} "> </script>
 
     <!--   Core JS Files   -->
     <script src="{{ asset('pagina/assets/js/core/jquery.min.js')}}" type="text/javascript"></script>
