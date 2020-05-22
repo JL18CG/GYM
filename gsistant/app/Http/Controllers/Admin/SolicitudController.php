@@ -20,7 +20,8 @@ class SolicitudController extends Controller
 
         $solis = DB::table('solicitudes')
             ->join('users', 'users.id', '=', 'solicitudes.id_user')
-            ->select('solicitudes.*', 'users.email')
+            ->join('rutinas', 'users.id', '=', 'rutinas.id_user')
+            ->select('solicitudes.*', 'users.email','rutinas.aprobado')
             ->get();
 
         return view('dashboard.admin.solicitud.index', ['solis' => $solis]);

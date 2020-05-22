@@ -144,3 +144,26 @@ a:hover{
 .boton{
     margin-top:-6px !important;
 }
+
+
+.form-control{
+    display: block !important;
+width: 100% !important;
+padding: .375rem .75rem !important;
+font-size: 1rem !important;
+line-height: 1.5 !important;
+color: #495057 !important;
+background-color: #fff !important;
+background-clip: padding-box !important;
+border: 1px solid #ced4da!important; 
+border-radius: .25rem!important; 
+    border-top-left-radius: 0.25rem!important; 
+    border-bottom-left-radius: 0.25rem!important; 
+transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out!important; 
+}
+
+.bt{
+
+    height: 35px;
+    margin: 0px !important;
+}

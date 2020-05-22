@@ -3,11 +3,13 @@
 namespace App\Http\Controllers\admin;
 
 use App\User;
+use App\Exports\UsersExport;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreUserPost;
 use App\Http\Requests\UpdateUserPut;
 use Illuminate\Support\Facades\Hash;
+use Maatwebsite\Excel\Facades\Excel;
 
 class UserController extends Controller
 {
@@ -26,11 +28,13 @@ class UserController extends Controller
    {
 
 
-        $users = User::orderBy('created_at','desc')->paginate(6);
+        $users = User::orderBy('created_at','desc')->paginate(20);
         return view('dashboard.admin.index', ['users' => $users]);
    }
 
-
+   public function export(){
+    return Excel::download(new UsersExport, 'usuarios.xlsx');
+   }
     /**
      * Show the form for creating a new resource.
      *

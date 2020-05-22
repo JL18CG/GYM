@@ -27,9 +27,12 @@
                 <td> {{ $soli->titulo }}</td>
         
                 <td>
-                
-                <button class="btn btn-success boton aprovado " data-id="{{ $soli->id_rutina }}"><i class="fa fa-check"></i></button> 
-                <a href="" class="btn btn-danger boton"><i class="fa fa-times"></i></a>     
+
+                <button class="btn {{$soli->aprobado == 'si' ? 'btn-success' : 'btn-danger' }} boton aprovado " data-id="{{ $soli->id_rutina }}"><i class="fa {{$soli->aprobado == 'si' ? 'fa-check' : 'fa-times' }}"></i></button> 
+
+    
+
+   
                    
                 </td>
 
@@ -91,23 +94,26 @@
     
     <script>
 document.querySelectorAll(".aprovado").forEach(button => button.addEventListener("click",function(){
-        console.log("Hola Mund :"+button.getAttribute("data-id"));
+        console.log("Botón :"+button.getAttribute("data-id"));
         var id = button.getAttribute("data-id");
 
         $.ajax({
         method: "POST",
-        url: "{{ URL::to("/") }}/dashboard/post-coment/proccess/"+id,
+        url: "{{ URL::to("/") }}/solicitudes/validar/"+id,
         data:{'_token':'{{ csrf_token() }}'}
         })
-        .done(function( approved ) {
-            if(approved == 1){
+        .done(function( aprobado ) {
+            if(aprobado == 'si'){
                 $(button).removeClass("btn-danger");
                 $(button).addClass("btn-success");
-                $(button).text("Aprovado");
+                $(button).children().removeClass("fa-times ");
+                $(button).children().addClass("fa-check");
             }else{
                 $(button).removeClass("btn-success");
                 $(button).addClass("btn-danger");
-                $(button).text("Rechazado");
+                $(button).children().removeClass("fa-check");
+                $(button).children().addClass("fa-times ");
+
             }
         });
 
