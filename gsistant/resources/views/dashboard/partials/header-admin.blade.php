@@ -22,13 +22,7 @@
 
              </a>
          </li>
-         <li class="nav-item">
-            <a class="nav-link nav-link-color" href="{{route('soli.index')}}">
-                   <i class="  now-ui-icons business_badge  "></i>
-                   Gestion de Solicitudes de Planes Alimenticios
 
-             </a>
-         </li>
 
 
          <li class="nav-item dropdown active">
