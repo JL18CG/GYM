@@ -4,12 +4,12 @@ namespace App\Http\Controllers\User;
 
 use App\User;
 use Validator;
-use App\Rutina;
+use App\Plane;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Storage;
 
-class RutinaController extends Controller
+class PlanesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,14 +17,11 @@ class RutinaController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {   
+    {
+        $planes = Plane::all()->where('aprobado','si');
         
-        $rutinas = Rutina::all()->where('nivelsuscripcion',auth()->user()->suscripcion)->where('aprobado','si');
-        //$rutinas2 =Rutina::all()->where('id_user',auth()->user()->id);
-        
-   //echo('djsalkfjhlkdfjm');
-    //dd($rutinas);
-    return view('dashboard.user.rutina',['rutinas'=>$rutinas]);
+        //echo ('jdks');
+        return view('dashboard.user.planes',['planes'=>$planes]);
     }
 
     /**
@@ -34,8 +31,7 @@ class RutinaController extends Controller
      */
     public function create()
     {
-
-        return view('dashboard.rutinas.crear', ['rutina' => new Rutina()]);
+        return view('dashboard.planes.crear', ['planes' => new Plane()]);
     }
 
     /**
@@ -46,6 +42,7 @@ class RutinaController extends Controller
      */
     public function store(Request $request)
     {
+        
         $validator = Validator::make($request->all(),[
             'id_user' =>'required',
             'nombre'=> 'required|min:3|max:30',
@@ -71,7 +68,7 @@ class RutinaController extends Controller
             $request->$img->move($rutaImg,$nombreImg);*/
 
             
-            Rutina::create([
+            Plane::create([
                 'id_user' =>$request['id_user'],
                 'nombre' => $request['nombre'],
                 'imagen' => Storage::url($request->file('imagen')->store('public/imagenes')),
@@ -81,28 +78,6 @@ class RutinaController extends Controller
             }
         return back()->with('status', 'Rutina creada con exito');
 
-        /*Rutina::create(
-            [   'id_user' =>$request['id_user'],
-                'nombre' => $request['nombre'],
-                'imagen' => 'default.jpg'
-                'nivelsuscripcion' =>$request['nivelsuscripcion']
-            ]
-        );
-        return back()->with('status', 'Rutina creada con exito');
-*/
-      /*  if(($img==null)){
-
-            Rutina::create([
-                'id_user' =>$request['id_user'],
-                'nombre' => $request['nombre'],
-                'imagen' => 'default.jpg',
-                'nivelsuscripcion' =>$request['nivelsuscripcion']
-        ]);
-        }else{*/
-        
-        //}
-        
-        //return back()->with('status', 'Rutina creada con exito');
     }
 
     /**
@@ -147,7 +122,6 @@ class RutinaController extends Controller
      */
     public function destroy($id)
     {
-        $rutina->delete();
-        return back()->with('status', 'Rutina eliminada con exito');
+        //
     }
 }

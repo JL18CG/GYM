@@ -29,8 +29,13 @@ Auth::routes();
 Route::resource('admin', 'Admin\UserController');
 Route::resource('solicitudes', 'Admin\SolicitudController');
 Route::resource('dashboard', 'User\UserController');
+
 Route::resource('entrenamientos', 'User\RutinaController');
+Route::resource('planes', 'User\PlanesController');
+
 Route::resource('agregarrutina', 'User\RutinaController');
+Route::resource('agregarplan', 'User\PlanesController');
+
 Route::resource('reportes', 'Admin\ReporteController');
 Route::post('solicitudes/validar/{rutina}', 'Admin\RutinaController@proccess');
 Route::get('reportes/usuario/{user}', 'Admin\ReporteController@post')->name('post-coment.post');

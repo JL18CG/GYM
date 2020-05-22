@@ -20,13 +20,13 @@
          </li>
          @if (Auth::user()->suscripcion=="3")
          <li class="nav-item">
-            <a class="nav-link nav-link-color" data-toggle="tab" href="#profile" role="tab">
+            <a class="nav-link nav-link-color"  href="{{route('planes.index')}}">
                   <i class="  now-ui-icons business_badge  "></i>
                   Planes Alimenticios
 
             </a>
         </li> 
-         @endif
+        @endif
         
 
          <li class="nav-item">
@@ -44,6 +44,13 @@
 
             </a>
         </li>  
+        <li class="nav-item">
+            <a class="nav-link nav-link-color" href="{{ route('agregarplan.create') }}" >
+                  <i class="  now-ui-icons files_single-copy-04  "></i>
+                  Agregar plan
+
+            </a>
+        </li> 
          @endif
          
          <li class="nav-item dropdown active">
