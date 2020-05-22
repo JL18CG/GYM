@@ -19,7 +19,6 @@ class CreateRutinasTable extends Migration
             $table->string('nombre',40);
             $table->string('imagen');
             $table->enum('aprobado', ['si', 'no'])->default('no');
-            $table->bigInteger('id_user')->nullable();
             $table->timestamps();
 
         });
