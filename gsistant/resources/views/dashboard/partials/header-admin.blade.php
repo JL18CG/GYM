@@ -1,58 +1,30 @@
-    <nav class="navbar navbar-expand-lg bg-primary">
+    <nav class="navbar navbar-expand-lg bg-dark">
    <div class="container">
-    
-    <a href="/">
     <img src="{{ asset('pagina/assets/img/logo-blanco.png')}}" class="logo-nav logo-size" alt="">
-    </a>
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
      <i class="fas fa-sliders-h icon-toggler"></i>
    </button>
    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
      <ul class="navbar-nav">
 
          <li class="nav-item">
-         <a class="nav-link nav-link-color"  href="{{route('entrenamientos.index')}}">
+             <a class="nav-link nav-link-color"   href="{{route('admin.index')}}">
                    <i class="now-ui-icons tech_laptop"></i>
-                   Entrenamientos
+                   Administradores
 
              </a>
          </li>
-         @if (Auth::user()->suscripcion=="3")
-         <li class="nav-item">
-            <a class="nav-link nav-link-color"  href="{{route('planes.index')}}">
-                  <i class="  now-ui-icons business_badge  "></i>
-                  Planes Alimenticios
-
-            </a>
-        </li> 
-        @endif
-        
 
          <li class="nav-item">
-             <a class="nav-link nav-link-color" data-toggle="tab" href="#profile" role="tab">
-                   <i class="  now-ui-icons files_single-copy-04  "></i>
-                   Asistente Virtual
+            <a class="nav-link nav-link-color" href="{{route('solicitudes.index')}}">
+                   <i class="  now-ui-icons business_badge  "></i>
+                   Gestión de Solicitudes
 
              </a>
          </li>
-         @if (Auth::user()->suscripcion=="4")
-         <li class="nav-item">
-            <a class="nav-link nav-link-color" href="{{ route('agregarrutina.create') }}" >
-                  <i class="  now-ui-icons files_single-copy-04  "></i>
-                  Agregar rutina
 
-            </a>
-        </li>  
-        <li class="nav-item">
-            <a class="nav-link nav-link-color" href="{{ route('agregarplan.create') }}" >
-                  <i class="  now-ui-icons files_single-copy-04  "></i>
-                  Agregar plan
 
-            </a>
-        </li> 
-         @endif
-         
+
          <li class="nav-item dropdown active">
                 <a class="nav-link dropdown-toggle profile-lik" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <i class="fas fa-user mr-2"></i>{{auth()->user()->email}}
